@@ -395,14 +395,6 @@ footer {
   display: block;
   object-fit: cover;
 }
-.header-logo {
-  display: block;
-  margin: 0 auto 0.5rem auto;
-  width: 160px;
-  max-width: 90vw;
-  height: auto;
-  object-fit: contain;
-}
 
 /* Contact Form Styles */
 .contact-container {
@@ -470,12 +462,11 @@ footer {
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
 }
-
 .header-logo {
   display: block;
   margin: 0 auto 0.5rem auto;
-  width: 10px;      /* Set your desired width */
+  width: 160px;
   max-width: 90vw;
-  height: 60;      /* Maintains aspect ratio */
+  height: auto;
   object-fit: contain;
 }
