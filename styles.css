@@ -181,3 +181,29 @@ footer {
   font-size: 0.95rem;
   border-top: 1px solid #23272A;
   margin-top:
+}
+
+.logo-bar {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  z-index: 100;
+}
+.site-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(79,142,247,0.18);
+  background: #141111;
+  padding: 0; /* Remove or reduce padding */
+  display: block;
+  object-fit: contain; /* Ensures the image fills the box */
+}
+.header-logo {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 340px;      /* Adjust as needed */
+  max-width: 90vw;
+  height: auto;
+  object-fit: contain;
+}
