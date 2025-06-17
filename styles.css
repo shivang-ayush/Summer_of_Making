@@ -1,0 +1,80 @@
+body {
+  background: #181A1B;
+  color: #F5F6FA;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+header {
+  background: #23272A;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #2C2F33;
+}
+h1 {
+  color: #4F8EF7;
+  margin-bottom: 0.5rem;
+}
+h2, h3 {
+  color: #B0B6BD;
+}
+p {
+  color: #E1E4EA;
+  line-height: 1.6;
+}
+a {
+  color: #4F8EF7;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #82B1FF;
+}
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #202225;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  padding: 2rem;
+}
+.button {
+  background: #4F8EF7;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #3574D4;
+}
+footer {
+  text-align: center;
+  color: #7A7F87;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  border-top: 1px solid #23272A;
+  margin-top: 2rem;
+}
+h1 {
+  color: #f61a1a;
+  margin-bottom: 0.5rem;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif; /* Changed font */
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.8rem; /* Increased font size */
+}
+
+h2 {
+  color: #4F8EF7;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}

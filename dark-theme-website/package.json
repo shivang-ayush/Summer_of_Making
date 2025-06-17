@@ -1,0 +1,23 @@
+{
+  "name": "dark-theme-website",
+  "version": "1.0.0",
+  "description": "A website designed with a dark theme featuring clean white, grey, and blue text.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "keywords": [
+    "dark-theme",
+    "website",
+    "css",
+    "html",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
