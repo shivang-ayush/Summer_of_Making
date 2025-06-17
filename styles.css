@@ -398,7 +398,7 @@ footer {
 .header-logo {
   display: block;
   margin: 0 auto 0.5rem auto;
-  width: 340px;
+  width: 160px;
   max-width: 90vw;
   height: auto;
   object-fit: contain;
@@ -462,4 +462,20 @@ footer {
   color: #82B1FF;
   font-size: 1rem;
   text-align: center;
+}
+.under-construction {
+  color: #f61a1a;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.header-logo {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 10px;      /* Set your desired width */
+  max-width: 90vw;
+  height: 60;      /* Maintains aspect ratio */
+  object-fit: contain;
 }
