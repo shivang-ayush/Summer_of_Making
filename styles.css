@@ -386,8 +386,8 @@ footer {
   z-index: 100;
 }
 .site-logo {
-  width: 80px;
-  height: 80px;
+  width: 5px;
+  height: 5px;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(79,142,247,0.18);
   background: #141111;
@@ -465,7 +465,7 @@ footer {
 .header-logo {
   display: block;
   margin: 0 auto 0.5rem auto;
-  width: 160px;
+  width: 20px;      /* Change this value as needed */
   max-width: 90vw;
   height: auto;
   object-fit: contain;
