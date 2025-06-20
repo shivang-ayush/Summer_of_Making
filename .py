@@ -1,8 +1,8 @@
 print("Hello, World!")
-def greet(name):
-    """Function to greet a person with their name."""
-    return f"Hello, {name}!"    
+x = 6
+def summer ():
+    global x
+    x = x + 4
+    return x
 
-greet(
-    "Alice"
-)
+print(summer()) 
