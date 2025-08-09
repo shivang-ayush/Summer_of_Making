@@ -28,6 +28,13 @@
             window.location.href = 'auth.html'; // Redirect to authentication page
         }
     </script>
+    <section id="game-section" style="margin-top: 20px; text-align: center;">
+    <h2>Number Guessing Game</h2>
+    <p>Guess a number between 1 and 100!</p>
+    <input type="number" id="user-guess" placeholder="Enter your guess" required>
+    <button id="guess-button">Guess</button>
+    <p id="result" style="margin-top: 20px;"></p>
+</section>
     <script>
     window.onload = function() {
         // Existing code...
