@@ -28,5 +28,26 @@
             window.location.href = 'auth.html'; // Redirect to authentication page
         }
     </script>
+    <script>
+    window.onload = function() {
+        // Existing code...
+
+        // Fetch and display registered users
+        fetch('$REPLIT_DB_URL')
+            .then(response => response.text())
+            .then(data => {
+                const users = data.split('\n').filter(Boolean);
+                const userList = document.createElement('ul');
+
+                users.forEach(user => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = decodeURIComponent(user);
+                    userList.appendChild(listItem);
+                });
+
+                document.querySelector('.container').appendChild(userList);
+            });
+                };
+    </script>
 </body>
 </html>
