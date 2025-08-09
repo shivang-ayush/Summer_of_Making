@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>User Authentication</h1>
+        <form id="auth-form">
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <button type="submit">Log In</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script>
+        document.getElementById('auth-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            const username = document.getElementById('username').value;
+            localStorage.setItem('username', username); // Save username in local storage
+            document.getElementById('status').innerText = `Welcome, ${username}!`;
+            
+            // Redirect to the user dashboard
+            setTimeout(() => {
+                window.location.href = 'dashboard.html'; // Change to your actual dashboard URL
+            }, 2000); // Redirects after 2 seconds
+        });
+    </script>
+</body>
+</html>

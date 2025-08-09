@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <p id="welcome-message"></p>
+        <button onclick="logout()">Log Out</button>
+    </div>
+    
+    <script>
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('welcome-message').innerText = `Welcome back, ${username}!`;
+            } else {
+                window.location.href = 'auth.html'; // Redirect if not logged in
+            }
+        };
+
+        function logout() {
+            localStorage.removeItem('username'); // Clear username from local storage
+            window.location.href = 'auth.html'; // Redirect to authentication page
+        }
+    </script>
+</body>
+</html>
