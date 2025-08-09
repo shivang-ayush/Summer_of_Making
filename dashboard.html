@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your styles -->
 </head>
 <body>
+    <section id="game-section" style="margin-top: 20px; text-align: center;">
+        <h2>Number Guessing Game</h2>
+        <p>Guess a number between 1 and 100!</p>
+        <input type="number" id="user-guess" placeholder="Enter your guess" required>
+        <button id="guess-button">Guess</button>
+        <p id="result" style="margin-top: 20px;"></p>
+    </section>
     <div class="container">
         <h1>User Dashboard</h1>
         <p id="welcome-message"></p>
@@ -28,13 +35,7 @@
             window.location.href = 'auth.html'; // Redirect to authentication page
         }
     </script>
-    <section id="game-section" style="margin-top: 20px; text-align: center;">
-    <h2>Number Guessing Game</h2>
-    <p>Guess a number between 1 and 100!</p>
-    <input type="number" id="user-guess" placeholder="Enter your guess" required>
-    <button id="guess-button">Guess</button>
-    <p id="result" style="margin-top: 20px;"></p>
-</section>
+    
     <script>
     window.onload = function() {
         // Existing code...
@@ -56,5 +57,28 @@
             });
                 };
     </script>
+    <script>
+    // Simple Number Guessing Game Logic
+    let randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a number between 1 and 100
+    const resultElement = document.getElementById('result');
+    
+    document.getElementById('guess-button').addEventListener('click', function() {
+        const userGuess = parseInt(document.getElementById('user-guess').value);
+        
+        if (userGuess < 1 || userGuess > 100 || isNaN(userGuess)) {
+            resultElement.textContent = "Please enter a valid number between 1 and 100.";
+            return;
+        }
+
+        if (userGuess === randomNumber) {
+            resultElement.textContent = "🎉 Correct! The number was " + randomNumber + ". Reloading for another round!";
+            setTimeout(() => window.location.reload(), 2000); // Reload after 2 seconds
+        } else if (userGuess < randomNumber) {
+            resultElement.textContent = "📉 Too low! Try again.";
+        } else {
+            resultElement.textContent = "📈 Too high! Try again.";
+        }
+    });
+</script>
 </body>
 </html>
