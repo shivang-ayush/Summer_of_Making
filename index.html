@@ -16,9 +16,8 @@
     <h1 class="under-construction"># Site UNDER Construction</h1>
     <h1>Welcome to Own Your Orbitz</h1> 
     <img src="rainbowlogo.png" alt="Own Your Orbitz Logo" class="header-logo">
-    <h2>Here's the end of everyones imagination.</h2>
+    <h2>Here's the end of everyone's imagination.</h2>
   </header>
-  <!-- Full -width ISRO rocket launch image section -->
   <div class="full-width-image">
     <img src="pic01.jpg" alt="ISRO Rocket Launch">
   </div> 
@@ -29,74 +28,30 @@
     <div class="overview-content">
       <h3>Overview</h3>
       <p>
-        A Futuristic Space-Settlement Booking System. Own Your Orbitz is a cutting-edge platform designed to revolutionize space tourism and settlement. With our advanced booking system, you can reserve your place in the cosmos, whether for a vacation on a space station or a permanent residence on a distant planet. Our user-friendly interface and secure payment options make it easy to plan your journey beyond Earth. Join us in exploring the final frontier and experience the future of travel like never before!
+        A Futuristic Space-Settlement Booking System. Own Your Orbitz is a cutting-edge platform designed to revolutionize space tourism and settlement. With our advanced booking system, you can reserve your place in the cosmos, whether for a vacation on a space station or a permanent residence on a distant planet. Join us in exploring the final frontier and experience the future of travel like never before!
       </p>
       <a href="#">Learn More</a>
       <br>
       <button class="button" onclick="showAlert()">Have a Tour.</button>
     </div>
   </div>
-  <div class="container project-goals-module-inline">
-    <div class="goals-module-header">
-      <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="Spherical Example" class="resized-image">
-      <h3>Project Goals</h3>
-    </div>
-    <table class="goals-table">
-      <tbody>
-        <tr>
-          <td>🌑</td>
-          <td>Provide a <span class="goal-keyword">realistic</span> and <span class="goal-keyword">interactive platform</span> for Moon and Mars plot booking</td>
-        </tr>
-        <tr>
-          <td>🚀</td>
-          <td><span class="goal-keyword">Educate</span> and <span class="goal-keyword">inspire</span> people about space colonization</td>
-        </tr>
-        <tr>
-          <td>💻</td>
-          <td>Showcase <span class="goal-keyword">advanced frontend design</span>, <span class="goal-keyword">backend logic</span>, and <span class="goal-keyword">database handling</span></td>
-        </tr>
-        <tr>
-          <td>💳</td>
-          <td>Simulate a <span class="goal-keyword">payment</span> and <span class="goal-keyword">plot assignment system</span></td>
-        </tr>
-        <tr>
-          <td>🛰️</td>
-          <td>Present something <span class="goal-keyword">Crazy!</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <section id="contact">
-    <div class="container contact-container">
-      <h2>Contact Me</h2>
-      <form id="contact-form" class="contact-form">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-        </div>
-        <div class="form-group">
-          <input type="text" id="profession" name="profession" placeholder="Your Profession" required>
-        </div>
-        <div class="form-group">
-          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-      <p class="form-status"></p>
-    </div>
+  
+  <section id="booking">
+    <h2>Book Your Plot</h2>
+    <div id="mars" class="sphere" onmouseover="showDetails('Mars Details')" onmouseout="hideDetails()"></div>
+    <div id="moon" class="sphere" onmouseover="showDetails('Moon Details')" onmouseout="hideDetails()"></div>
+    <form id="booking-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Submit Booking</button>
+    </form>
+    <p id="details"></p>
   </section>
+  
   <footer>
     &copy; 2025 Own Your Orbitz. All rights reserved.
   </footer>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="scripts/main.js"></script>
-<!-- Elfsight Visitor Counter | Untitled Visitor Counter -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-f5f17bee-d1f2-46f3-b6c0-7943c0ccc8ff" data-elfsight-app-lazy></div>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
